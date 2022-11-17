@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Formulario</title>
+	</head>
+	<body>
+		<form action="https://ptsv2.com/t/duse5-1668219733/post" method="post">
+			<fieldset>
+				<legend>Campos Personales</legend>
+
+				<div>
+					<label for="userName">User Name</label>
+					<input
+						type="text"
+						name="userName"
+						id="userName"
+						placeholder="Escriba su nombre aquí..."
+						required
+						autocomplete="off"
+					/>
+				</div>
+
+				<div>
+					<label for="cantidad">Número</label>
+					<input type="number" id="cantidad" name="cantidad" min="1" max="50" />
+				</div>
+
+				<div>
+					<label for="tlf">Telefono</label>
+					<input type="tel" id="tlf" name="tlf" pattern="[0-9]{9}" />
+				</div>
+
+				<div>
+					<label for="pass">Password</label>
+					<input type="password" id="pass" name="password" />
+				</div>
+
+				<div>
+					<label for="email">Email</label>
+					<input type="email" id="email" name="email" />
+				</div>
+
+				<div>
+					<label for="paises">Elige un país</label>
+					<select name="paises" id="paises">
+						<option value="spain">España</option>
+						<option value="arg">Argentina</option>
+						<option value="cl">Chile</option>
+					</select>
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<legend>Pokemons</legend>
+
+				<input
+					type="checkbox"
+					id="pokemon1"
+					name="pokemon"
+					value="Charmander"
+				/>
+				<label for="pokemon1">Charmander</label>
+
+				<input type="checkbox" id="pokemon2" name="pokemon" value="Pikachu" />
+				<label for="pokemon1">Pikachu</label>
+
+				<input type="checkbox" id="pokemon3" name="pokemon" value="Ratata" />
+				<label for="pokemon1">Ratata</label>
+			</fieldset>
+
+			<fieldset>
+				<legend>Vehículo favorito</legend>
+				<input type="radio" id="bici" name="vehiculo" value="bici" />
+				<label for="bici">Bici</label>
+
+				<input type="radio" id="coche" name="vehiculo" value="bici" />
+				<label for="coche">Coche</label>
+
+				<input type="radio" id="moto" name="vehiculo" value="bici" />
+				<label for="moto">Moto</label>
+			</fieldset>
+
+			<button submit>Enviar</button>
+		</form>
+	</body>
+</html>
